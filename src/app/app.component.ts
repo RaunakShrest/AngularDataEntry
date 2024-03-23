@@ -17,6 +17,7 @@ import { MatPaginator } from '@angular/material/paginator';
 import { MatSort } from '@angular/material/sort';
 import { MatSortModule } from '@angular/material/sort';
 import { MatPaginatorModule } from '@angular/material/paginator';
+import { DialogRef } from '@angular/cdk/dialog';
 @Component({
   selector: 'app-root',
   standalone: true,
@@ -42,7 +43,8 @@ export class AppComponent implements OnInit {
 
   @ViewChild(MatPaginator) paginator!: MatPaginator;
   @ViewChild(MatSort) sort!: MatSort;
-  constructor(private _dialog: MatDialog, private _empService: EmployeeService) {}
+  constructor(private _dialog: MatDialog, private _empService: EmployeeService,
+    ) {}
 
 
 
@@ -53,8 +55,15 @@ export class AppComponent implements OnInit {
   }
 
 openAddEditEmpForm(){
-  this._dialog.open(EmpAddEditComponent);
+ const dialogRef= this._dialog.open(EmpAddEditComponent);
+dialogRef.afterClosed().subscribe({
+  next: (val)=>{
+    if (val){
+      this.getEmployeeList()
+    }
+  }
 
+})
 }
 getEmployeeList() {
   // console.log('Fetching employee list...');
@@ -94,6 +103,19 @@ deleteEmployee(id: number){
 }
 
 
+openEditForm(data: any) {
+    const dialogRef = this._dialog.open(EmpAddEditComponent, {
+      data,
+    });
+
+    dialogRef.afterClosed().subscribe({
+      next: (val) => {
+        if (val) {
+          this.getEmployeeList();
+        }
+      },
+    });
+  }
 
 
   }
