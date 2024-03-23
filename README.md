@@ -1,6 +1,6 @@
 # CrudApp
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.1.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.1 on 23/02/2024.
 
 ## Development server
 
@@ -29,6 +29,7 @@ Technology Stacks
 - JSON server
 - TypeScript
 - MaterialUI
+- SCSS
 
 
 Features
