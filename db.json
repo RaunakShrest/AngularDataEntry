@@ -1,0 +1,43 @@
+{
+  "posts": [
+    {
+      "id": "1",
+      "title": "a title",
+      "views": 100
+    },
+    {
+      "id": "2",
+      "title": "another title",
+      "views": 200
+    }
+  ],
+  "comments": [
+    {
+      "id": "1",
+      "text": "a comment about post 1",
+      "postId": "1"
+    },
+    {
+      "id": "2",
+      "text": "another comment about post 1",
+      "postId": "1"
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "employees": [
+    {
+      "id": "189e",
+      "firstName": "Yunbesh",
+      "lastName": "ML",
+      "email": "yunesh@hgml.com",
+      "dob": "2011-11-10T18:15:00.000Z",
+      "gender": "male",
+      "education": "",
+      "experience": 4,
+      "company": "asd",
+      "package": 4
+    }
+  ]
+}
