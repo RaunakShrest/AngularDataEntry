@@ -27,9 +27,9 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 Technology Stacks
 - Angular v17
 - JSON server
-- TypeScript
-- MaterialUI
-- SCSS
+- TypeScript.
+- MaterialUI.
+- SCSS.
 
 
 Features
