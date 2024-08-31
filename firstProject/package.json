@@ -1,7 +1,7 @@
 {
   "name": "softwareproject",
   "version": "1.0.0",
-  "description": "Lab report",
+  "description": "Lab reports",
   "main": "yes",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
